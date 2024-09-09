@@ -1,5 +1,6 @@
 package cifor.icraf.notificationsapp.main.activity
 
+import android.os.Build
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         window.statusBarColor = this.getColor(R.color.md_theme_background)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            requestPermissions(arrayOf(android.Manifest.permission.POST_NOTIFICATIONS), 101)
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
