@@ -1,7 +1,7 @@
 package cifor.icraf.notificationsapp.main.application
 
 import android.app.Application
-import com.squareup.leakcanary.core.BuildConfig
+import cifor.icraf.notificationsapp.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import timber.log.Timber
