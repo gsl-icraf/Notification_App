@@ -4,6 +4,7 @@ plugins {
     alias(notation = libs.plugins.ksp)
     alias(notation = libs.plugins.kotlinx.serialization)
     alias(notation = libs.plugins.safe.args)
+    alias(notation = libs.plugins.google.services)
 }
 
 android {
@@ -57,6 +58,9 @@ dependencies {
     implementation(dependencyNotation = libs.splash.screen)
     implementation(dependencyNotation = libs.timber)
     implementation(dependencyNotation = libs.bundles.navigation)
+
+    implementation(dependencyNotation = platform(libs.firebase.bom))
+    implementation(dependencyNotation = libs.firebase.cloud.messaging)
 
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
