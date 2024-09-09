@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="@string/app_name"
+        app:title="NotificationsApp"
         app:titleTextColor="@color/md_theme_onBackground" />
 
     <LinearLayout
