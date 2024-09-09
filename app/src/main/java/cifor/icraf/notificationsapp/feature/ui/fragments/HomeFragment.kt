@@ -1,4 +1,4 @@
-package cifor.icraf.notificationsapp.feature.ui
+package cifor.icraf.notificationsapp.feature.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -27,6 +27,11 @@ class HomeFragment : Fragment() {
 
         if (activity is AppCompatActivity) {
             (activity as AppCompatActivity).setSupportActionBar(binding.homeFragmentToolBar)
+        }
+
+        binding.nameButton.setOnClickListener {
+            val actualName = binding.nameBox.text.toString()
+            binding.name.text = actualName
         }
 
         return binding.root
