@@ -77,7 +77,7 @@ NotificationsApp was developed in preparation of the next release of the [Regree
 ## Screenshots
 
 <p float="left">
-  <img src="assets/screenshots/screenshot_1.png" alt="Screenshot #1" width="45%" />
+  <img src="assets/screenshots/screenshot_1.png" alt="Screenshot #1" width="45%" style="margin-right: 10px;" />
   <img src="assets/screenshots/screenshot_2.png" alt="Screenshot #2" width="45%" />
 </p>
 
